@@ -2,5 +2,5 @@
 # Copyright (C) Brian Candler 2009. Released under the Ruby licence.
 
 $DEFAULT_ENV='cucumber'
-ARGV[0,0] = ['cucumber']
+ARGV[0,0] = ["-e","gem 'cucumber'","-e","load Gem.bin_path('cucumber', 'cucumber')","--"]
 load File.join(File.dirname(__FILE__), 'fruby')
